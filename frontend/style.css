@@ -1,3 +1,11 @@
+:root {
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+}
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -40,4 +48,50 @@ button {
 
 footer {
   padding: 24px;
+}
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-large);
+  padding: var(--spacing-medium) var(--spacing-large);
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.search-form {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  gap: 8px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-large);
+  padding: var(--spacing-medium);
+}
+
+.main-nav a,
+.header-actions a {
+  text-decoration: none;
+   font-size: 16px;
 }
